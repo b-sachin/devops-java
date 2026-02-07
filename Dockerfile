@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY JavaCode.java .
-RUN javac JavaCode.java
-CMD["java", "JavaCode"]
+COPY Hello.java .
+RUN javac Hello.java
+CMD["java", "Hello"]
